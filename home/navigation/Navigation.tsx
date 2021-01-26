@@ -22,7 +22,6 @@ import ProjectsForUserScreen from '../screens/ProjectsForUserScreen';
 import ProjectsScreen from '../screens/ProjectsScreen';
 import QRCodeScreen from '../screens/QRCodeScreen';
 import SignInScreen from '../screens/SignInScreen';
-import SignUpScreen from '../screens/SignUpScreen';
 import SnacksForUserScreen from '../screens/SnacksForUserScreen';
 import UserSettingsScreen from '../screens/UserSettingsScreen';
 import Environment from '../utils/Environment';
@@ -250,14 +249,6 @@ export default (props: { theme: string }) => (
               component={SignInScreen}
               options={{
                 title: 'Sign In',
-                headerLeft: () => <CloseButton />,
-              }}
-            />
-            <RootStack.Screen
-              name="SignUp"
-              component={SignUpScreen}
-              options={{
-                title: 'Sign Up',
                 headerLeft: () => <CloseButton />,
               }}
             />
